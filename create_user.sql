@@ -1,0 +1,8 @@
+CREATE TABLE `sys_user` (
+  `user_id` BIGINT(32) AUTO_INCREMENT COMMENT '用户id',
+  `user_code` VARCHAR(32) DEFAULT NULL COMMENT '用户账号',
+  `user_name` VARCHAR(64) DEFAULT NULL COMMENT '用户名称',
+  `user_password` VARCHAR(32) DEFAULT NULL COMMENT '用户密码',
+  `user_state` CHAR(1) DEFAULT NULL COMMENT '1:正常,0:暂停',
+  PRIMARY KEY (`user_id`)
+) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
